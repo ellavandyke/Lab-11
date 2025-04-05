@@ -95,7 +95,7 @@ num_pipeline = Pipeline([
 ])
 cat_pipeline = Pipeline([
     ('imputer', SimpleImputer(strategy='most_frequent')),
-    ('onehot', OneHotEncoder(sparse_output=False, handle_unknown='ignore'))  
+    ('onehot', OneHotEncoder(sparse=False, handle_unknown='ignore'))  
 ])
 
 # Combine pipelines
