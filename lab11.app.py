@@ -95,8 +95,9 @@ num_pipeline = Pipeline([
 ])
 cat_pipeline = Pipeline([
     ('imputer', SimpleImputer(strategy='most_frequent')),
-    ('onehot', OneHotEncoder(sparse=True, handle_unknown='ignore'))  
+    ('onehot', OneHotEncoder(handle_unknown='ignore', sparse=False))  
 ])
+
 
 # Combine pipelines
 preprocessor_selected = ColumnTransformer(
