@@ -6,4 +6,4 @@
  tensorflow
  matplotlib 
  seaborn
- Streamlit
+ openpyxl
